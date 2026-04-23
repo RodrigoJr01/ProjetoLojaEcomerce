@@ -1,10 +1,11 @@
-﻿using LojaEcomerce.Models;
+﻿using LojaEcomerce.Interface;
+using LojaEcomerce.Models;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Cms;
 
 namespace LojaEcomerce.Repositorio
 {
-    public class UsuarioRepositorio
+    public class UsuarioRepositorio : IUsuarioRepositorio
     {
         //variavel privada e somenete para leitura
         private readonly string _connectionString;
